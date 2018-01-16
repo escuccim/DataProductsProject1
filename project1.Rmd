@@ -1,0 +1,20 @@
+---
+title: "Data Products Project 1"
+author: "Eric Scuccimarra"
+date: "15 January 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
+
+## Morgins, Switzerland
+
+```{r createmap, echo=FALSE}
+my_map <- leaflet() %>% addTiles() %>%  addMarkers(lat=46.2373629, lng=6.862394699999982, popup="My House") %>% addMarkers(lat=46.23646669284622, lng=6.858097314834595, popup="The Ski Lift")
+my_map
+```
+
+This is a simple map created with Leaflet done for a project for Coursera's Data Products course.
